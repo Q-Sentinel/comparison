@@ -140,7 +140,7 @@ std::string str = (isNotify == true) ? "Notification" : "Indication";
     reconnect();
   }
   client.loop();
-  delay(1000);
+
   // Publish a message
   String message = data;
   if (client.connected()) {
